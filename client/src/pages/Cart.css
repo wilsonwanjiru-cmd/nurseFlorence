@@ -1,0 +1,158 @@
+.cart {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.cart h2 {
+  color: #0a3d62;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 60px;
+}
+
+.cart-empty h2 {
+  color: #0a3d62;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  margin-bottom: 30px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item-info h3 {
+  color: #0a3d62;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.item-info p {
+  color: #b71540;
+  font-weight: 600;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-quantity button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0a3d62;
+  background: white;
+  color: #0a3d62;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.item-quantity button:hover {
+  background: #0a3d62;
+  color: white;
+}
+
+.item-quantity span {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.item-total {
+  font-weight: 700;
+  color: #0a3d62;
+  font-size: 1.2rem;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-btn:hover {
+  background: #c82333;
+}
+
+.cart-summary {
+  text-align: right;
+  padding: 20px;
+  border-top: 2px solid #0a3d62;
+}
+
+.cart-summary h3 {
+  font-size: 1.8rem;
+  color: #0a3d62;
+  margin-bottom: 20px;
+}
+
+.cart-summary .btn {
+  display: inline-block;
+  background: #0a3d62;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 2px solid #0a3d62;
+}
+
+.cart-summary .btn:hover {
+  background: transparent;
+  color: #0a3d62;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    grid-template-columns: 80px 1fr;
+    gap: 15px;
+    position: relative;
+    padding-right: 50px;
+  }
+  .item-quantity, .item-total, .remove-btn {
+    grid-column: span 2;
+  }
+  .item-quantity {
+    justify-content: center;
+  }
+  .remove-btn {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+}

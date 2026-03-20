@@ -1,0 +1,260 @@
+/* Home.css */
+
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  margin: 30px 0 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.hero h1 {
+  color: #0a3d62;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero .subtitle {
+  font-size: 1.5rem;
+  color: #3c6382;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.hero .motto {
+  font-size: 1.8rem;
+  color: #b71540;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  background: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info span {
+  margin: 0 15px;
+  white-space: nowrap;
+}
+
+.hero .btn {
+  display: inline-block;
+  background: #0a3d62;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  border: 2px solid #0a3d62;
+  margin-top: 20px;
+}
+
+.hero .btn:hover {
+  background: transparent;
+  color: #0a3d62;
+}
+
+/* Featured Section */
+.featured {
+  margin-top: 60px;
+}
+
+.featured h2 {
+  text-align: center;
+  color: #0a3d62;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.featured h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #b71540;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  color: #0a3d62;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.product-card .price {
+  font-size: 1.4rem;
+  color: #b71540;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.btn-small {
+  display: inline-block;
+  background: #0a3d62;
+  color: white;
+  padding: 8px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+  border: 2px solid #0a3d62;
+}
+
+.btn-small:hover {
+  background: transparent;
+  color: #0a3d62;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25d366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background: #128C7E;
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(18, 140, 126, 0.5);
+}
+
+.whatsapp-float svg {
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .hero .motto {
+    font-size: 1.3rem;
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+  
+  .contact-info span {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .hero .btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+  
+  .featured h2 {
+    font-size: 2rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 15px;
+  }
+  
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+  
+  .whatsapp-float span {
+    display: none; /* Hide text on very small screens, keep only icon */
+  }
+  
+  .whatsapp-float svg {
+    margin: 0;
+  }
+}

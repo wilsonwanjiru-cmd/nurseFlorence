@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #0a3d62;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #3c6382;
+  margin-top: 5px;
+}
+
+.motto {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b71540;
+  margin-top: 10px;
+}
+
+.contact-bar {
+  background: #0a3d62;
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.services h2 {
+  text-align: center;
+  color: #0a3d62;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.category {
+  margin-bottom: 40px;
+}
+
+.category h3 {
+  color: #3c6382;
+  border-bottom: 2px solid #b71540;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.service-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0a3d62;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25d366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 100;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.whatsapp-float:hover {
+  background: #128C7E;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  color: #666;
+  border-top: 1px solid #ccc;
+}

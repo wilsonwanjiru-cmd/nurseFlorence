@@ -1,0 +1,46 @@
+.navbar {
+  background: #0a3d62;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart-badge {
+  background: #b71540;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 1rem;
+  }
+}

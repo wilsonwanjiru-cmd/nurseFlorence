@@ -1,0 +1,55 @@
+.admin-login {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.admin-login h2 {
+  color: #0a3d62;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.admin-login .error {
+  color: #b71540;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.admin-login form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.admin-login form input:focus {
+  outline: none;
+  border-color: #0a3d62;
+  box-shadow: 0 0 0 3px rgba(10,61,98,0.1);
+}
+
+.admin-login .btn {
+  width: 100%;
+  background: #0a3d62;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid #0a3d62;
+}
+
+.admin-login .btn:hover {
+  background: transparent;
+  color: #0a3d62;
+}
